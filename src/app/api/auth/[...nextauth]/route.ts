@@ -18,6 +18,10 @@ export const authOptions: NextAuthOptions = {
       async authorize(credentials, req) {
         const response = await fetch(
           `https://yuchen-react-proj.azurewebsites.net/login/?username=${credentials?.email}&password=${credentials?.password}`
+          ,
+          {
+            cache: "no-store",
+          }
         );
         const res: Respond = await response.json();
 

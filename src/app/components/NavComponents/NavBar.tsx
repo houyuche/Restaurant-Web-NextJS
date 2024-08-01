@@ -42,9 +42,6 @@ const NavBar = async () => {
             <Link href="/menu" className="btn btn-ghost text-l">
               Menu
             </Link>
-            <Link href="/reservation" className="btn btn-ghost text-l">
-              Reservation
-            </Link>
             <Link className="btn btn-ghost text-l" href={"/api/auth/signin"}>
               Log in
             </Link>

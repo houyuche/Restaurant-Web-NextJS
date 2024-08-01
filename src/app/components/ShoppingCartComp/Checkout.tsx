@@ -18,6 +18,7 @@ const Checkout = ({ totalPrice, cart }: Props) => {
   const [rewardValue, setRewardValue] = useState(0);
 
   const {clearCart} = useCart();
+  
 
   const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setRewardSelected(e.target.value);
@@ -40,8 +41,9 @@ const Checkout = ({ totalPrice, cart }: Props) => {
       "https://yuchen-react-proj.azurewebsites.net/place_order/",
       payload
     );
-    console.log(payload);
+    //console.log(payload);
     clearCart();
+    
   };
 
   return (

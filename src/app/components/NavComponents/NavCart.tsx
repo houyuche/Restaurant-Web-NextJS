@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import menuData from "@/menu.json";
 import Link from "next/link";
-import { Item, Respond } from "../Interface";
+import { Item } from "../Interface";
 import { useCart } from "@/CartContext";
 
 interface Props {
@@ -23,7 +23,7 @@ const NavCart = ({ userCart, email }: Props) => {
       "https://yuchen-react-proj.azurewebsites.net/update_cart/",
       payload
     );
-    console.log(payload);
+    //console.log(payload);
   }, [cart]);
 
 

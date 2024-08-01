@@ -77,7 +77,7 @@ const SignUpPage = () => {
           <input {...register('password')} type="password" className="grow" placeholder="password" />
         </label>
 
-        <button className="btn btn-primary mt-5 mb-5" onClick={handleSubmit(onSubmit)}>Primary</button>
+        <button className="btn btn-primary mt-5 mb-5" onClick={handleSubmit(onSubmit)}>Register</button>
 
         {errors.username && <Alert message={errors.username.message!}/>}
 
