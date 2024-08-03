@@ -1,5 +1,5 @@
 import React from "react";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "../lib/auth";
 import { getServerSession } from "next-auth";
 import { Booking, PastOrder } from "../components/Interface";
 import ProfileMain from "./ProfileMain";
@@ -10,6 +10,7 @@ interface User {
 }
 
 const Profile = async () => {
+
   const session = await getServerSession(authOptions);
   const username = session?.user.email;
 
@@ -32,7 +33,7 @@ const Profile = async () => {
   return (
     <div className="w-2/3 mx-auto my-4">
       <h1 className="font-bold text-3xl">Profile</h1>
-      <ProfileMain orders={orders} bookings={bookings} />
+      <ProfileMain myOrders={orders.reverse()} myBookings={bookings.reverse()} />
     </div>
   );
 };

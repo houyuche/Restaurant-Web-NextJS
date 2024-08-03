@@ -2,6 +2,7 @@
 import React, { RefObject, useState } from "react";
 import { Item, MenuItem } from "../Interface";
 import { useCart } from "@/CartContext";
+import Image from "next/image";
 
 interface Props {
   modalRef: RefObject<HTMLDialogElement>;
@@ -43,9 +44,11 @@ const MenuModal = ({
         <h1 className="font-bold text-lg opacity-70"> US${item.price}</h1>
         <div className="badge badge-accent badge-outline">{item.category}</div>
 
-        <img
+        <Image
           src="https://cdn.pixabay.com/photo/2024/05/13/19/19/ufo-8759621_1280.png"
           alt={item.name}
+          width={100}
+          height={100}
           className="w-1/2"
         />
         <div className="modal-action flex justify-between">

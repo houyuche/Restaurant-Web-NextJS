@@ -1,5 +1,6 @@
 import React from "react";
 import { MenuItem } from "../Interface";
+import Image from 'next/image'
 
 interface Props {
   menuItem: MenuItem;
@@ -13,9 +14,11 @@ const MenuCard = ({ menuItem, onClick }: Props) => {
       onClick={onClick ? () => onClick(menuItem) : undefined}
     >
       <figure>
-        <img
+        <Image
           src="https://cdn.pixabay.com/photo/2024/05/13/19/19/ufo-8759621_1280.png"
           alt={menuItem.name}
+          width={100}
+          height={100}
           className="w-1/2"
         />
       </figure>

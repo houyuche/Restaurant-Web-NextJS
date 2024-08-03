@@ -24,7 +24,7 @@ const NavCart = ({ userCart, email }: Props) => {
       payload
     );
     //console.log(payload);
-  }, [cart]);
+  }, [email, cart]);
 
 
   const totalPrice = cart.reduce((total, cartItem) => {

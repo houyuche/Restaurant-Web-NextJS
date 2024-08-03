@@ -2,7 +2,6 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 import { Item } from "./app/components/Interface";
 
-// Define the type for the context value
 interface CartContextType {
   cart: Item[];
   addToCart: (item: Item) => void;

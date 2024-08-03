@@ -4,6 +4,7 @@ import { Item, MenuItem } from "../Interface";
 import menuData from "@/menu.json";
 import { FaTrashAlt } from "react-icons/fa";
 import { useCart } from "@/CartContext";
+import Image from "next/image";
 
 interface Props {
   item: Item;
@@ -18,10 +19,12 @@ const CartCard = ({ item }: Props) => {
   return (
     <div className="card card-side bg-base-100 w-full shadow-xl my-2">
       <figure>
-        <img
+        <Image
           src="https://cdn.pixabay.com/photo/2024/05/13/19/19/ufo-8759621_1280.png"
           alt={item.name}
-          className="w-32"
+          width={60}
+          height={60}
+          className="pl-2"
         />
       </figure>
       <div className="card-body flex flex-row items-center justify-between">

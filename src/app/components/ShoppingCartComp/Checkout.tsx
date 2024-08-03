@@ -125,7 +125,7 @@ const Checkout = ({ totalPrice, cart }: Props) => {
           </p>
         </div>
       </div>
-      <div className="flex justify-end mt-6">
+      <div className="flex justify-end mt-6 pb-10">
         <Link href="/confirmation" className="btn btn-primary text-l" onClick={sendOrder} >
           Place Order
         </Link>

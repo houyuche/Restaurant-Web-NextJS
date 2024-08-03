@@ -7,7 +7,7 @@ import { SessionProvider } from "next-auth/react";
 import Checkout from "../components/ShoppingCartComp/Checkout";
 
 
-const page = () => {
+const Page = () => {
   const { cart, clearCart } = useCart();
 
   const totalPrice = cart.reduce((total, cartItem) => {
@@ -43,4 +43,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

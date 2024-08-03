@@ -26,29 +26,6 @@ export default function Home() {
           walk in.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 max-w-4xl mx-auto">
-        <div className="overflow-hidden rounded-lg shadow-lg">
-          <img
-            src="https://via.placeholder.com/300x200?text=Delicious+Meals"
-            alt="Delicious Meals"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="overflow-hidden rounded-lg shadow-lg">
-          <img
-            src="https://via.placeholder.com/300x200?text=Cozy+Atmosphere"
-            alt="Cozy Atmosphere"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="overflow-hidden rounded-lg shadow-lg">
-          <img
-            src="https://via.placeholder.com/300x200?text=Fine+Dining"
-            alt="Fine Dining"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
     </main>
   );
 }
